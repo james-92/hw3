@@ -21,7 +21,7 @@ struct EditProfileView: View{
                 }
                 
                 NavigationLink{
-                    EditAddressView()
+                    EditScoreView()
                 } label: {
                     Text(viewModel.user.highestScore)
                 }
@@ -64,7 +64,7 @@ struct EditNameView: View{
 }
 
 
-struct EditAddressView: View{
+struct EditScoreView: View{
     @State private var highestScore = ""
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var viewModel: ContentViewModel
